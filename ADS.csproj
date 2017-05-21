@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ADS.Tree1</StartupObject>
+    <StartupObject>ADS.TreapDepth</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -61,7 +61,8 @@
     <Compile Include="Sort5.cs" />
     <Compile Include="Sort6.cs" />
     <Compile Include="Sort7.cs" />
-    <Compile Include="Tree1.cs" />
+    <Compile Include="BinarySearchTree.cs" />
+    <Compile Include="TreapDepth.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

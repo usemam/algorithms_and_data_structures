@@ -2,7 +2,7 @@
 
 namespace ADS
 {
-    public class Tree1
+    public class BinarySearchTree
     {
         public static void Main()
         {
