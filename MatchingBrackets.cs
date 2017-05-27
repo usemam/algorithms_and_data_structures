@@ -1,10 +1,17 @@
-﻿using System;
+﻿/*
+ * Дан фрагмент последовательности скобок, состоящей из символов (){}[].
+ * Требуется определить, возможно ли продолжить фрагмент в обе стороны, получив корректную последовательность.
+ * Если возможно - выведите минимальную корректную последовательность, иначе - напечатайте "IMPOSSIBLE".
+ * Максимальная длина строки 10^6 символов.
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace ADS
 {
-    public class Lists2
+    public class MatchingBrackets
     {
         public static void Main()
         {

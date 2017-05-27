@@ -1,8 +1,15 @@
-﻿using System;
+﻿/*
+ * Задано N точек на плоскости. Указать (N-1)-звенную несамопересекающуюся незамкнутую ломаную, проходящую через все эти точки.
+ * Стройте ломаную в порядке возрастания x-координаты. Если имеются две точки с одинаковой x-координатой,
+ * то расположите раньше ту точку, у которой y-координата меньше.
+ * Для сортировки точек реализуйте пирамидальную сортировку.
+ */
+
+using System;
 
 namespace ADS
 {
-    public class Sort2
+    public class HeapSort
     {
         private static Point[] _points;
 
@@ -24,13 +31,13 @@ namespace ADS
                     };
             }
 
-            HeapSort();
+            Sort();
             foreach (var p in _points)
                 Console.WriteLine("{0} {1}", p.X, p.Y);
             Console.ReadLine();
         }
 
-        private static void HeapSort()
+        private static void Sort()
         {
             // build heap
             _size = _points.Length;

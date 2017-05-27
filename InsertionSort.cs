@@ -2,7 +2,7 @@
 
 namespace ADS
 {
-    public class Sort1
+    public class InsertionSort
     {
         public static void Main()
         {
@@ -11,12 +11,12 @@ namespace ADS
             var a = new int[n];
             for (int i = 0; i < n; ++i) a[i] = Convert.ToInt32(aStr[i]);
 
-            InsertionSort(a);
+            Sort(a);
             for (int i = 0; i < n; ++i) Console.Write("{0} ", a[i]);
             Console.ReadLine();
         }
 
-        private static void InsertionSort(int[] a)
+        private static void Sort(int[] a)
         {
             int n = a.Length;
             for (int i = 1; i < n; ++i)

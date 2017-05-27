@@ -1,12 +1,14 @@
-﻿using System;
+﻿/*
+ * Выведите разложение натурального числа n > 1 на простые множители.
+ * Простые множители должны быть упорядочены по возрастанию и разделены пробелами.
+*/
+
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ADS
 {
-    public class Basic1
+    public class PrimeDivisors
     {
         private static bool IsPrime(int n, HashSet<int> primes)
         {

@@ -1,8 +1,14 @@
-﻿using System;
+﻿/*
+ * На числовой прямой окрасили N отрезков. Известны координаты левого и правого концов каждого отрезка (Li и Ri).
+ * Найти сумму длин частей числовой прямой, окрашенных ровно в один слой.
+ * Для сортировки реализуйте сортировку слиянием.
+ */
+
+using System;
 
 namespace ADS
 {
-    public class Sort3
+    public class OneLayerOfPaint
     {
         public static void Main()
         {

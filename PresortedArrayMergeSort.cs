@@ -1,8 +1,15 @@
-﻿using System;
+﻿/*
+ * Дана последовательность целых чисел a[0..n-1] и натуральное число k,
+ * такое что для любых i, j: если j >= i + k, то a[i] <= a[j]. Требуется отсортировать последовательность.
+ * Последовательность может быть очень длинной. Время работы O(n * log(k)). Доп. память O(k).
+ * Использовать слияние. 
+ */
+
+using System;
 
 namespace ADS
 {
-    public class Sort4
+    public class PresortedArrayMergeSort
     {
         public static void Main()
         {

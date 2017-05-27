@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ADS.TreapDepth</StartupObject>
+    <StartupObject>ADS.PrimeDivisors</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,21 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Arrays1.cs" />
-    <Compile Include="Arrays2.cs" />
-    <Compile Include="Basic1.cs" />
-    <Compile Include="BinaryHeap1.cs" />
-    <Compile Include="Hash1.cs" />
-    <Compile Include="Lists1.cs" />
-    <Compile Include="Lists2.cs" />
+    <Compile Include="MaxSum.cs" />
+    <Compile Include="MinIndex.cs" />
+    <Compile Include="PrimeDivisors.cs" />
+    <Compile Include="GreedyVovochka.cs" />
+    <Compile Include="OpenAddressedHashTable.cs" />
+    <Compile Include="DynamicDeque.cs" />
+    <Compile Include="MatchingBrackets.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sort1.cs" />
-    <Compile Include="Sort2.cs" />
-    <Compile Include="Sort3.cs" />
-    <Compile Include="Sort4.cs" />
-    <Compile Include="Sort5.cs" />
-    <Compile Include="Sort6.cs" />
-    <Compile Include="Sort7.cs" />
+    <Compile Include="InsertionSort.cs" />
+    <Compile Include="HeapSort.cs" />
+    <Compile Include="OneLayerOfPaint.cs" />
+    <Compile Include="PresortedArrayMergeSort.cs" />
+    <Compile Include="QuickSortWithRecursionOptimization.cs" />
+    <Compile Include="MedianOfMedians.cs" />
+    <Compile Include="LSDCountingSort.cs" />
     <Compile Include="BinarySearchTree.cs" />
     <Compile Include="TreapDepth.cs" />
   </ItemGroup>
