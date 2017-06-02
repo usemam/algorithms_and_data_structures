@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ADS.PrimeDivisors</StartupObject>
+    <StartupObject>ADS.CoinChange</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CoinChange.cs" />
     <Compile Include="MaxSum.cs" />
     <Compile Include="MinIndex.cs" />
     <Compile Include="PrimeDivisors.cs" />
