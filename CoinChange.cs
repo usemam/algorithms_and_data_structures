@@ -18,15 +18,53 @@ namespace ADS
             int n = str.Length;
             var x = new int[n];
             for (int i = 0; i < n; ++i) x[i] = Convert.ToInt32(str[i]);
-            Console.WriteLine(Naive(x, n-1, k));
+            Console.WriteLine(Array(x, n, k));
             Console.ReadLine();
         }
 
+        /// <summary>
+        /// Naive recursive implementation. Running time is O(2^n).
+        /// </summary>
         private static bool Naive(int[] x, int n, int k)
         {
             if (k == 0) return true;
             if (k < 0 || n < 0) return false;
             return Naive(x, n - 1, k) || Naive(x, n - 1, k - x[n]);
+        }
+
+        /// <summary>
+        /// Optimized solution that uses boolean matrix. Running time is O(n*k), memory usage is O(n*k).
+        /// </summary>
+        private static bool Matrix(int[] x, int n, int k)
+        {
+            var m = new bool[n + 1, k + 1];
+            m[0, 0] = true;
+            for (int i = 1; i <= n; i++)
+            {
+                m[i, 0] = true;
+                for (int j = 1; j <= k; ++j)
+                    m[i, j] = m[i - 1, j] || x[i - 1] <= j && m[i - 1, j - x[i - 1]];
+            }
+            return m[n, k];
+        }
+
+        /// <summary>
+        /// Optimized solution that uses two boolean arrays. Running time is O(n*k), memory usage is O(k).
+        /// </summary>
+        private static bool Array(int[] x, int n, int k)
+        {
+            var a1 = new bool[k + 1];
+            a1[0] = true;
+            var a2 = new bool[k + 1];
+            for (int i = 0; i < n; i++)
+            {
+                a2[0] = true;
+                for (int j = 1; j <= k; j++)
+                    a2[j] = a1[j] || x[i] <= j && a1[j - x[i]];
+                for (int j = 1; j <= k; j++) a1[j] = a2[j];
+            }
+
+            return a1[k];
         }
     }
 }
