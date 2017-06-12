@@ -46,12 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BinaryHeap.cs" />
     <Compile Include="CoinChange.cs" />
+    <Compile Include="HashTable.cs" />
     <Compile Include="MaxSum.cs" />
     <Compile Include="MinIndex.cs" />
     <Compile Include="PrimeDivisors.cs" />
     <Compile Include="GreedyVovochka.cs" />
-    <Compile Include="OpenAddressedHashTable.cs" />
+    <Compile Include="StringHashTable.cs" />
     <Compile Include="DynamicDeque.cs" />
     <Compile Include="MatchingBrackets.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
